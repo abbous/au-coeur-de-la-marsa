@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_restaurant_information",
+  "info": {
+    "name": "Information",
+    "icon": "angle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Description": {
+      "type": "text"
+    },
+    "opening_hours": {
+      "type": "component",
+      "repeatable": true,
+      "component": "restaurant.openning-hours"
+    }
+  }
+}

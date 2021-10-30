@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Hotels",
+  "info": {
+    "name": "Hotels",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "restaurant.location"
+    },
+    "reference": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.social-network",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "category": {
+      "via": "hotels",
+      "model": "category"
+    },
+    "place": {
+      "via": "hotels",
+      "model": "place"
+    }
+  }
+}

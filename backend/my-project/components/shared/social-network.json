@@ -1,0 +1,13 @@
+{
+  "collectionName": "socialNetworks",
+  "info": {
+    "name": "SocialNetwork",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

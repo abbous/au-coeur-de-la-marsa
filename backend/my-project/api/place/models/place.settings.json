@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "places",
+  "info": {
+    "name": "place",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "restaurants": {
+      "collection": "restaurant",
+      "via": "place"
+    },
+    "hotels": {
+      "collection": "hotels",
+      "via": "place"
+    }
+  }
+}

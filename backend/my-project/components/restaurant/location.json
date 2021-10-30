@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_restaurant_locations",
+  "info": {
+    "name": "Location",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "Address": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}
