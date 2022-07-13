@@ -17,12 +17,12 @@
       "required": true
     },
     "restaurants": {
-      "collection": "restaurant",
-      "via": "category"
+      "via": "category",
+      "collection": "restaurant"
     },
     "hotels": {
-      "collection": "hotels",
-      "via": "category"
+      "via": "category",
+      "collection": "hotels"
     },
     "imagePreview": {
       "model": "file",

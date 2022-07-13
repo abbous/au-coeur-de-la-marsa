@@ -6,14 +6,5 @@
     "description": ""
   },
   "options": {},
-  "attributes": {
-    "Description": {
-      "type": "text"
-    },
-    "opening_hours": {
-      "type": "component",
-      "repeatable": true,
-      "component": "restaurant.openning-hours"
-    }
-  }
+  "attributes": {}
 }

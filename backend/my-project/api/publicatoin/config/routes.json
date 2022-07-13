@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/publicatoins",
+      "handler": "publicatoin.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/publicatoins/count",
+      "handler": "publicatoin.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/publicatoins/:id",
+      "handler": "publicatoin.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/publicatoins",
+      "handler": "publicatoin.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/publicatoins/:id",
+      "handler": "publicatoin.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/publicatoins/:id",
+      "handler": "publicatoin.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

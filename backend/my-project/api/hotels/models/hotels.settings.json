@@ -59,6 +59,10 @@
     "place": {
       "via": "hotels",
       "model": "place"
+    },
+    "star": {
+      "type": "string",
+      "default": "0"
     }
   }
 }

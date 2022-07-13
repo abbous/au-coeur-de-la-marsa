@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publicatoins",
+  "info": {
+    "name": "publicatoin",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "restaurant.location"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

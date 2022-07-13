@@ -18,12 +18,12 @@
       "required": true
     },
     "restaurants": {
-      "collection": "restaurant",
-      "via": "place"
+      "via": "place",
+      "collection": "restaurant"
     },
     "hotels": {
-      "collection": "hotels",
-      "via": "place"
+      "via": "place",
+      "collection": "hotels"
     }
   }
 }
